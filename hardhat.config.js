@@ -1,5 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-ethers");
+require("dotenv").config();
 const fs = require('fs');
 // const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
 
@@ -18,8 +19,8 @@ module.exports = {
       chainId: 1337
     },
     goerli: {
-      url: "<YOUR_ALCHEMY_URL>",
-      accounts: [ "<YOUR_PRIVATE_KEY>" ]
+      url: "https://eth-goerli.g.alchemy.com/v2/RB5UZB7ASZXdGEQIakPJXBh4QEqK7kKR",
+      accounts: [ "a7f34230094b57b267ac3c7d7af9ccf2b1783751952951d2c4037dd49e696dbb" ]
     }
   },
   solidity: {
